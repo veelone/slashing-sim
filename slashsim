@@ -1,0 +1,485 @@
+getgenv().autoslice = false;
+getgenv().autorebirth = false;
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Slashing Simulator", "Sentinel")
+local Main = Window:NewTab("Main")
+local MainSec = Main:NewSection("Main")
+local Rebirths = Window:NewTab("Rebirths")
+local RebirthSec = Rebirths:NewSection("Rebirths")
+local Teleports = Window:NewTab("Teleports")
+local TeleSec = Teleports:NewSection("World 1")
+local TeleSec2 = Teleports:NewSection("World 2")
+local TeleSec3 = Teleports:NewSection("World 3")
+
+MainSec:NewToggle("Auto Slice", "Auto clicks", function(v)
+    getgenv().autoslice = v
+    spawn(function()
+        while getgenv().autoslice == true do
+            wait()
+game:GetService("ReplicatedStorage").Remotes.Game.AirSlice:FireServer()
+
+        end
+
+end)
+end)
+RebirthSec:NewToggle("1 Rebirth", "1 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 1,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("3 Rebirth", "3 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 3,
+    [2] = 2
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("10 Rebirth", "10 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 10,
+    [2] = 3
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+        end
+    end)
+end)
+RebirthSec:NewToggle("25 Rebirth", "25 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 25,
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("50 Rebirth", "50 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 50,
+    [2] = 5
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("150 Rebirth", "150 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 150,
+    [2] = 6
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("400 Rebirth", "400 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 400,
+    [2] = 7
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("1000 Rebirth", "1000 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 1000,
+    [2] = 8
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("3500 Rebirth", "3500 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 3500,
+    [2] = 9
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("8500 Rebirth", "8500 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 8500,
+    [2] = 10
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("15000 Rebirth", "15000 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 15000,
+    [2] = 11
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+        end
+    end)
+end)
+RebirthSec:NewToggle("30000 Rebirth", "30000 Rebirth", function(v)
+    getgenv().autorebirth = v
+    spawn(function()
+        while getgenv().autorebirth == true do
+            wait()
+local args = {
+    [1] = 30000,
+    [2] = 12
+}
+
+game:GetService("ReplicatedStorage").Remotes.Other.Rebirth:FireServer(unpack(args))
+
+
+
+        end
+    end)
+end)
+TeleSec:NewButton("Village", "Teleports to Village", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets.Village.EggStands.BasicEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World1.MapAssets.Village.EggStands.BasicEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets.Village.EggStands.BasicEgg.Egg)
+    end
+    end
+    
+    teleportZone('Village')
+end)
+TeleSec:NewButton("Medieval Madness", "Teleports to Medieval Madness", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets["Medival Madness"].EggStands.WizardEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World1.MapAssets["Medival Madness"].EggStands.WizardEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets["Medival Madness"].EggStands.WizardEgg.Egg)
+    end
+    end
+    
+    teleportZone('Medival Madness')
+end)
+
+TeleSec:NewButton("Snow Fields", "Teleports to Snow Fields", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets["Snow Fields"].EggStands.FrozenEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World1.MapAssets["Snow Fields"].EggStands.FrozenEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets["Snow Fields"].EggStands.FrozenEgg.Egg)
+    end
+    end
+    
+    teleportZone('Snow Fields')
+end)
+
+TeleSec:NewButton("Candy Paradise", "Teleports to Candy Paradise", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets["Candy Paradise"].EggStands.CandyEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World1.MapAssets["Candy Paradise"].EggStands.CandyEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets["Candy Paradise"].EggStands.CandyEgg.Egg)
+    end
+    end
+    
+    teleportZone('Candy Paradise')
+end)
+
+TeleSec:NewButton("Lava Fall", "Teleports to Lava Fall", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets.Lavafall.EggStands.MagmaEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World1.MapAssets.Lavafall.EggStands.MagmaEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World1.MapAssets.Lavafall.EggStands.MagmaEgg.Egg)
+    end
+    end
+    
+    teleportZone('Lava Fall')
+end)
+
+TeleSec2:NewButton("Atlantis", "Teleports to Atlantis", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Aqua.EggStands.WaterEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World2.MapAssets.Aqua.EggStands.WaterEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Aqua.EggStands.WaterEgg.Egg)
+    end
+    end
+    
+    teleportZone('Aqua')
+end)
+
+TeleSec2:NewButton("Graveyard", "Teleports to Graveyard", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Graveyard.EggStands.ScaryEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World2.MapAssets.Graveyard.EggStands.ScaryEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Graveyard.EggStands.ScaryEgg.Egg)
+    end
+    end
+    
+    teleportZone('Graveyard')
+end)
+
+TeleSec2:NewButton("Moon", "Teleports to Moon", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Moon.EggStands.SpaceRocketEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World2.MapAssets.Moon.EggStands.SpaceRocketEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Moon.EggStands.SpaceRocketEgg.Egg)
+    end
+    end
+    
+    teleportZone('Moon')
+end)
+
+TeleSec2:NewButton("Desert", "Teleports to Desert", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Desert.EggStands.MummyEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World2.MapAssets.Desert.EggStands.MummyEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets.Desert.EggStands.MummyEgg.Egg)
+    end
+    end
+    
+    teleportZone('Desert')
+end)
+
+TeleSec2:NewButton("Pirate", "Teleports to Pirate Island", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets["Pirate Island"].EggStands.PirateEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World2.MapAssets["Pirate Island"].EggStands.PirateEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World2.MapAssets["Pirate Island"].EggStands.PirateEgg.Egg)
+    end
+    end
+    
+    teleportZone('Pirate Island')
+end)
+
+TeleSec3:NewButton("Space Station", "Teleports to Space Station", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets["Space Station"].EggStands.CyborgEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World3.MapAssets["Space Station"].EggStands.CyborgEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets["Space Station"].EggStands.CyborgEgg.Egg)
+    end
+    end
+    
+    teleportZone('Space Station')
+end)
+
+TeleSec3:NewButton("Space", "Teleports to Space", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets.Space.EggStands.SpaceEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World3.MapAssets.Space.EggStands.SpaceEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets.Space.EggStands.SpaceEgg.Egg)
+    end
+    end
+    
+    teleportZone('Space')
+end)
+
+TeleSec3:NewButton("Cryptic", "Teleports to Cryptic", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets.Cryptic.EggStands.CryptoEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World3.MapAssets.Cryptic.EggStands.CryptoEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets.Cryptic.EggStands.CryptoEgg.Egg)
+    end
+    end
+    
+    teleportZone('Cryptic')
+end)
+
+TeleSec3:NewButton("Toys Room", "Teleports to Toys Room", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets["Toys Room"].EggStands.ToyEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World3.MapAssets["Toys Room"].EggStands.ToyEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets["Toys Room"].EggStands.ToyEgg.Egg)
+    end
+    end
+    
+    teleportZone('Toys Room')
+end)
+
+TeleSec3:NewButton("Steampunk", "Teleports to Steampunk", function()
+    function teleportTO(placeCFrame)
+        local player = game.Players.LocalPlayer;
+        if player.Character then
+        player.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets.Steampunk.EggStands.SteamEgg.Egg.CFrame)
+    
+    function teleportArea(zone)
+        if game:GetService("Workspace").WORLDS.World3.MapAssets.Steampunk.EggStands.SteamEgg.Egg:FindFirstChild(zone) then
+            teleportTO(game:GetService("Workspace").WORLDS.World3.MapAssets.Steampunk.EggStands.SteamEgg.Egg)
+    end
+    end
+    
+    teleportZone('Steampunk')
+end)
